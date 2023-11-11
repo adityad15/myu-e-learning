@@ -27,7 +27,7 @@
 
         <TextView
             android:id="@+id/imageButton"
-            android:text="GAMES"
+            android:text="Why"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="50dp"
