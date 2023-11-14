@@ -5,8 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/transperent"
     android:foreground="@color/transperent"
-    android:gravity="center"
-    tools:context=".MainActivity">
+    android:gravity="center">
 
     <ImageButton
         android:id="@+id/chess"
