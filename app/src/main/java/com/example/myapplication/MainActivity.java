@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton frameLayout;
+    ImageButton frameLayout, paintLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         frameLayout = findViewById(R.id.imageButton);
+        paintLayout = findViewById(R.id.paintIB);
 
         frameLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +35,14 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 showDialog();
+            }
+        });
+
+        paintLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, PaintActivity.class);
+                startActivity(intent);
             }
         });
     }
