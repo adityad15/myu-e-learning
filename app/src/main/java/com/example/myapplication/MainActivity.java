@@ -1,7 +1,6 @@
 package com.example.myapplication;
 
 import android.app.Dialog;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +8,9 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.myapplication.Games.chess.FirstPage;
+import com.example.myapplication.Paint.PaintActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -62,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Do something
-                Toast.makeText(MainActivity.this, "Chess", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, FirstPage.class));
                 dialog.dismiss();  // Dismiss the dialog if needed
             }
         });

@@ -2,16 +2,24 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/btn_back"
+        android:background="@color/transperent"/>
     <FrameLayout
         android:id="@+id/drawing_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <!-- Canvas for drawing -->
-        <com.example.myapplication.PaintView
+        <com.example.myapplication.Paint.PaintView
             android:id="@+id/paint_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
+
+
     </FrameLayout>
 
     <LinearLayout
@@ -25,8 +33,9 @@
         <Button
             android:id="@+id/btnRed"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/red"
             android:text="Red" />
 
         <Button

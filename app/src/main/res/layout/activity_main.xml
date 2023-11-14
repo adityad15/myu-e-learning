@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
     <include layout="@layout/custom_dialogbox" />
 
+
     <FrameLayout
         android:id="@+id/fl1"
         android:layout_columnSpan="1"
