@@ -14,7 +14,7 @@
         android:layout_marginStart="28dp"
         android:backgroundTint="@color/translucent"
         android:drawableLeft="@drawable/btn_back"
-        android:text="VIRAT"
+        android:text="Rohit"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.089"
