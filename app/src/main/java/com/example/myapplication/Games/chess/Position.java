@@ -2,9 +2,6 @@ package com.example.myapplication.Games.chess;
 
 import com.example.myapplication.Games.chess.Pieces.Piece;
 
-/**
- * Created by DIPANSH KHANDELWAL on 03-06-2017
- */
 
 public class Position {
     private Piece piece;

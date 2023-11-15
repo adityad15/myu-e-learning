@@ -1,8 +1,6 @@
 package com.example.myapplication.Games.chess;
 
-/**
- * Created by DIPANSH KHANDELWAL on 03-06-2017
- */
+
 
 public class Coordinates {
     private int x;
