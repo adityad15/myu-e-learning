@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <include layout="@layout/custom_dialogbox" />
+
 
     <FrameLayout
         android:id="@+id/fl1"
@@ -51,39 +53,38 @@
         <!-- Row 1, Column 1 -->
         <FrameLayout
 
-            android:layout_width="187dp"
-            android:layout_height="196dp"
-            android:layout_rowSpan="1"
-            android:layout_rowWeight="1"
             android:layout_columnSpan="1"
-            android:layout_columnWeight="1"
+            android:layout_rowSpan="1"
             android:layout_gravity="fill"
-            android:background="?android:attr/selectableItemBackground"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
             android:foreground="?android:attr/selectableItemBackground"
+            android:background="?android:attr/selectableItemBackground"
             android:scaleType="fitCenter">
 
             <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_rowSpan="1"
-                android:layout_rowWeight="1"
+                android:id="@+id/paintIB"
+                android:src="@drawable/paint"
                 android:layout_columnSpan="1"
-                android:layout_columnWeight="1"
+                android:layout_rowSpan="1"
                 android:layout_gravity="fill"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:background="?android:attr/selectableItemBackground"
                 android:scaleType="fitXY"
-                android:src="@drawable/painting" />
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"/>
 
             <TextView
+                android:text="PAINT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center|bottom"
-                android:fontFamily="cursive"
-                android:text="PAINT"
-                android:textColor="#000000"
                 android:textSize="30dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                android:layout_gravity="center|bottom"
+                android:textColor="#000000"/>
         </FrameLayout>
         <!-- Row 1, Column 2 -->
 
@@ -170,26 +171,26 @@
             android:scaleType="fitCenter">
 
             <ImageButton
-                android:layout_width="180dp"
-                android:layout_height="193dp"
-                android:layout_rowSpan="1"
-                android:layout_rowWeight="1"
-                android:layout_columnSpan="1"
-                android:layout_columnWeight="1"
-                android:layout_gravity="fill"
-                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/more"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:scaleType="fitXY"
-                android:src="@drawable/dice" />
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"/>
 
             <TextView
-                android:text="      ...\nAnd More"
+                android:text="  ...\nAnd More"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="30dp"
+                android:textSize="20dp"
                 android:textStyle="bold"
-                android:fontFamily="cursive"
-                android:layout_gravity="center|bottom"
+                android:fontFamily="serif-monospace"
+                android:layout_gravity="center"
                 android:textColor="#000000"/>
         </FrameLayout>
 

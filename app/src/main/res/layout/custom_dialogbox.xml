@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/transperent"
+    android:foreground="@color/transperent"
+    android:gravity="center">
+
+    <ImageButton
+        android:id="@+id/chess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:src="@drawable/chess"/>
+
+    <ImageButton
+        android:id="@+id/carrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:src="@drawable/carrom"
+        android:layout_below="@+id/chess"/>
+
+    <ImageButton
+        android:id="@+id/puzzle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:src="@drawable/puzzle"
+        android:layout_below="@+id/carrom"/>
+
+</RelativeLayout>
