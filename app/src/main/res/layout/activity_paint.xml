@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/btn_back"
+        android:background="@color/transperent"/>
+    <FrameLayout
+        android:id="@+id/drawing_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Canvas for drawing -->
+        <com.example.myapplication.Paint.PaintView
+            android:id="@+id/paint_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp">
+
+        <!-- Color buttons -->
+        <Button
+            android:id="@+id/btnRed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/red"
+            android:text="Red" />
+
+        <Button
+            android:id="@+id/btnBlue"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Blue" />
+
+        <!-- Brush size seekbar -->
+        <SeekBar
+            android:id="@+id/brush_size_seekbar"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:max="50"
+            android:progress="10" />
+    </LinearLayout>
+</RelativeLayout>
