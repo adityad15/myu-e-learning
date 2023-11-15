@@ -3,6 +3,7 @@ plugins {
 }
 
 android {
+
     namespace = "com.example.myapplication"
     compileSdk = 33
 
@@ -30,6 +31,7 @@ android {
         dataBinding = true
         viewBinding = true
     }
+
 }
 
 dependencies {
