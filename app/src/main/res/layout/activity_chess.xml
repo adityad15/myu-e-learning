@@ -14,7 +14,7 @@
         android:layout_marginStart="28dp"
         android:backgroundTint="@color/translucent"
         android:drawableLeft="@drawable/btn_back"
-        android:text="BACK"
+        android:text="VIRAT"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.089"
@@ -1042,7 +1042,7 @@
         >
 
         <TextView
-            android:text="King"
+            android:text="Queen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/pawn_queen"

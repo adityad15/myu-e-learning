@@ -1,8 +1,5 @@
 package com.example.myapplication.TicTacToe;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
@@ -11,13 +8,14 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.myapplication.MainActivity;
+import com.example.myapplication.R;
 
 public class ResultDialog extends Dialog {
 
         private final String message;
         private final MainActivity mainActivity;
 
-        public ResultDialog(@NonNull Context context, String message, MainActivity mainActivity) {
+        public ResultDialog(Context context, String message, MainActivity mainActivity) {
             super(context);
             this.message = message;
             this.mainActivity = mainActivity;
